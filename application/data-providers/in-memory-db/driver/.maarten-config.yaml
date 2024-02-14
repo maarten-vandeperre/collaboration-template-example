@@ -1,5 +1,5 @@
 maarten-module-config:
-  base-package: com.redhat.demo.configuration.quarkus.maartenapi
+  base-package: com.redhat.demo.dataproviders.inmemorydb.driver
   changes:
     allowed: false
     forbidden:

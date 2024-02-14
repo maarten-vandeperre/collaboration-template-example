@@ -1,4 +1,4 @@
-maarten-config:
+maarten-module-config:
   base-package: com.redhat.demo.core.domain
   changes:
     allowed: true

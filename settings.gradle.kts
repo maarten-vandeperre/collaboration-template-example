@@ -27,6 +27,9 @@ include(":application:core:maarten-core-utils")
 include(":application:core:domain")
 include(":application:core:usecases")
 
+include(":application:data-providers:in-memory-db:driver")
+include(":application:data-providers:in-memory-db:mapping")
+
 rootProject.children
     .flatMap { child -> if (child.children.isEmpty()) listOf(child) else child.children }
     .flatMap { child -> if (child.children.isEmpty()) listOf(child) else child.children }

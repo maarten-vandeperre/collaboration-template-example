@@ -1,5 +1,5 @@
 maarten-module-config:
-  base-package: com.redhat.demo.core.usecases
+  base-package: com.redhat.demo.dataproviders.inmemorydb.mapping
   changes:
     allowed: true
     forbidden:
