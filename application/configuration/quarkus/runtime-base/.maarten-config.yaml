@@ -1,0 +1,5 @@
+maarten-config:
+  changes:
+    allowed: conditional
+    when:
+      - runtime configuration changes required

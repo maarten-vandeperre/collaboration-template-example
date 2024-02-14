@@ -19,6 +19,8 @@ include(":platform:quarkus-platform")
 include(":platform:spring-platform")
 
 include(":application:configuration:quarkus:runtime-base")
+include(":application:configuration:quarkus:maarten-api")
+include(":application:configuration:quarkus:runtime-api")
 
 rootProject.children
     .flatMap { child -> if (child.children.isEmpty()) listOf(child) else child.children }

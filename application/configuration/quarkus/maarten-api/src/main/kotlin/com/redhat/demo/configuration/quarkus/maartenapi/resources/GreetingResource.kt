@@ -1,4 +1,4 @@
-package com.redhat.demo
+package com.redhat.demo.configuration.quarkus.maartenapi.resources
 
 import jakarta.ws.rs.GET
 import jakarta.ws.rs.Path

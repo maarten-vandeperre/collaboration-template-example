@@ -1,4 +1,4 @@
-package com.redhat.demo
+package com.redhat.demo.configuration.quarkus.maartenapi.resources
 
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
@@ -15,15 +15,6 @@ class GreetingResourceTest {
           .then()
              .statusCode(200)
              .body(`is`("Hello from RESTEasy Reactive"))
-    }
-
-    @Test
-    fun testTestEndpoint() {
-        given()
-            .`when`().get("/test")
-            .then()
-            .statusCode(200)
-            .body(`is`("Hello from RESTEasy Reactive"))
     }
 
 }

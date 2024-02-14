@@ -24,7 +24,6 @@ subprojects.filter { !(it.name == "platform" || it.parent?.name == "platform") }
     it.apply(plugin = "idea")
     it.apply(plugin = "org.jetbrains.kotlin.jvm")
     it.apply(plugin = "org.jetbrains.kotlin.plugin.allopen")
-    it.apply(plugin = "java")
 
     it.configure<JavaPluginExtension> {
         sourceCompatibility = JavaVersion.VERSION_21
