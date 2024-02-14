@@ -1,3 +1,6 @@
 maarten-config:
+  base-package: com.redhat.demo.core.domain
   changes:
     allowed: true
+    forbidden:
+      - gradle file

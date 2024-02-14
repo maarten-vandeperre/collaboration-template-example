@@ -1,3 +1,6 @@
 maarten-config:
+  base-package: com.redhat.demo.configuration.quarkus.maartenapi
   changes:
     allowed: false
+    forbidden:
+      - gradle file

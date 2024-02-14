@@ -22,6 +22,11 @@ include(":application:configuration:quarkus:runtime-base")
 include(":application:configuration:quarkus:maarten-api")
 include(":application:configuration:quarkus:runtime-api")
 
+include(":application:core:maarten-domain")
+include(":application:core:maarten-core-utils")
+include(":application:core:domain")
+include(":application:core:usecases")
+
 rootProject.children
     .flatMap { child -> if (child.children.isEmpty()) listOf(child) else child.children }
     .flatMap { child -> if (child.children.isEmpty()) listOf(child) else child.children }

@@ -1,5 +1,8 @@
 maarten-config:
+  base-package: com.redhat.demo.configuration
   changes:
     allowed: conditional
     when:
       - runtime configuration changes required
+    forbidden:
+      - gradle file
