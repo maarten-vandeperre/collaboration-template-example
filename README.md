@@ -10,3 +10,22 @@ You are an organization that's willing to contribute to our platform.
 We (i.e., the "Maarten organization") provides you with a software template, which you have to stick to.
 Code within submodules can be added, changed, extended, unless the submodules are prefixed with "maarten-".
 In case you doubt about you have the permission to change a submodule, check the description in the maarten-config.yaml file.
+
+## Start application
+```shell
+./gradlew :application:configuration:quarkus:runtime-base:quarkusDev
+```
+
+## CURL commands
+```shell
+curl --location 'http://localhost:8080/people'
+```
+
+```shell
+curl  --location 'http://localhost:8080/people' \
+      --header 'Content-Type: application/json' \
+      --data '{
+          "firstName": "Maarten",
+          "lastName": "Vandeperre"
+      }'
+```

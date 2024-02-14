@@ -5,6 +5,13 @@ plugins {
 dependencies {
     implementation(platform(project(":platform:quarkus-platform")))
 
+    implementation(project(":application:core:maarten-domain"))
+    implementation(project(":application:core:maarten-core-utils"))
+    implementation(project(":application:core:domain"))
+    implementation(project(":application:core:usecases"))
+    implementation(project(":application:data-providers:in-memory-db:driver"))
+    implementation(project(":application:data-providers:in-memory-db:mapping"))
+
     implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
     implementation("io.quarkus:quarkus-resteasy-reactive")
     implementation("io.quarkus:quarkus-kotlin")
